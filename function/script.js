@@ -6,7 +6,7 @@ var currentActive
  
 
 next.addEventListener('click', () => {
-  load()
+  
 
   currentActive++
   console.log(currentActive)
@@ -17,7 +17,7 @@ next.addEventListener('click', () => {
 })
 
 prev.addEventListener('click', () => {
-  load()
+  
   currentActive--
   console.log(currentActive)
   if(currentActive < 1) {
@@ -96,3 +96,49 @@ function load () {
   }
  
 }
+
+next.addEventListener('load', () => {
+ var b = document.querySelector('p').id;
+  
+  if (b == '1') {
+    currentActive = 1; 
+    
+  }
+  else if (b == '2') {
+    currentActive = 2;
+    c
+  }
+  else if (b == '3') {
+    currentActive = 3;
+    
+  }
+  else if (b == '4') {
+    currentActive = 4;
+    
+  }
+ circles.forEach((circle, idx) => {
+    if(idx < currentActive) {
+      circle.classList.add('active')
+    }
+    else {
+      circle.classList.remove('active')
+    }
+  })
+  const actives = document.querySelectorAll('.active')
+  
+  progress.style.width=(actives.length-1) / (circles.length-1)*100+'%'
+  
+  if(currentActive=== 1) {
+    prev.disabled = true
+  }
+  else if(currentActive === circles.length){
+    next.disabled= true
+    
+  }
+  else {
+    prev.disabled = false
+    next.disabled = false
+  }
+
+
+})
