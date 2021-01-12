@@ -29,7 +29,7 @@ prev.addEventListener('click', () => {
 
 function update() {
   circles.forEach((circle, idx) => {
-    if(idx <= currentActive) {
+    if(idx < currentActive) {
       circle.classList.add('active')
     }
     else {
@@ -52,19 +52,19 @@ function load () {
   var b = document.querySelector('p').id;
   
   if (b == '1') {
-    currentActive = 0; 
+    currentActive = 1; 
     
   }
   else if (b == '2') {
-    currentActive = 1;
-    
-  }
-  else if (b == '3') {
     currentActive = 2;
     
   }
-  else if (b == '4') {
+  else if (b == '3') {
     currentActive = 3;
+    
+  }
+  else if (b == '4') {
+    currentActive = 4;
     
   }
  circles.forEach((circle, idx) => {
@@ -93,19 +93,19 @@ next.addEventListener('load', () => {
  var b = document.querySelector('p').id;
   
   if (b == '1') {
-    currentActive = 0; 
+    currentActive = 1; 
     
   }
   else if (b == '2') {
-    currentActive = 1;
-    
-  }
-  else if (b == '3') {
     currentActive = 2;
     
   }
-  else if (b == '4') {
+  else if (b == '3') {
     currentActive = 3;
+    
+  }
+  else if (b == '4') {
+    currentActive = 4;
     
   }
  circles.forEach((circle, idx) => {
