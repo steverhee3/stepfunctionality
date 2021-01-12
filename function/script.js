@@ -46,32 +46,5 @@ function update() {
   }
 }
 
-function generate () {
-  var a = document.getElementById('next');
-  if(currentActive===1) {
-    a.href = getUrl1();
-  }
-  else if(currentActive === 2) {
-    a.href = getUrl2();
-  }
-  else if(currentActive === 3) {
-    a.href = getUrl3();
-  }
-  else if(currentActive === 4) {
-    a.href = getUrl4();
-  }
-  
-}
-function getUrl1(that) {
-   return "https://steverhee3.github.io/stepfunctionality/function/index1.html";
-}
-function getUrl2(that) {
-   return "https://steverhee3.github.io/stepfunctionality/function/index2.html";
-}
-function getUrl3(that) {
-   return "https://steverhee3.github.io/stepfunctionality/function/index3.html";
-}
-function getUrl4(that) {
-   return "https://steverhee3.github.io/stepfunctionality/function/index4.html";
-}
+
 
