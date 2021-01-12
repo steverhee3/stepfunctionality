@@ -19,6 +19,7 @@ next.addEventListener('click', () => {
 prev.addEventListener('click', () => {
   load()
   currentActive--
+  console.log(currentActive)
   if(currentActive < 1) {
     currentActive= 1
   }
@@ -53,21 +54,21 @@ function update() {
 }
 function load () {
   var b = document.querySelector('p').id;
-  console.log(b);
+  
   if (b == '1') {
     currentActive = 1; 
-    console.log(currentActive);
+    
   }
   else if (b == '2') {
     currentActive = 2;
-    console.log(currentActive);
+    c
   }
   else if (b == '3') {
     currentActive = 3;
-    console.log(currentActive);
+    
   }
   else if (b == '4') {
     currentActive = 4;
-    console.log(currentActive);
+    
   }
 }
