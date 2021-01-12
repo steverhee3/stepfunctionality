@@ -3,7 +3,8 @@ const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
 
-
+ 
+let currentActive = 1
 next.addEventListener('click', () => {
   load()
   currentActive++
@@ -33,6 +34,7 @@ function update() {
     }
   })
   const actives = document.querySelectorAll('.active')
+  
   progress.style.width=(actives.length-1) / (circles.length-1)*100+'%'
   
   if(currentActive=== 1) {
@@ -49,21 +51,24 @@ function update() {
 }
 
 
-
-
 function load () {
   var b = document.querySelector('p').id;
+  console.log(b);
   if (b == '1') {
-    let currentActive = 1;  
+    let currentActive = 1; 
+    console.log(b);
   }
   else if (b == '2') {
     let currentActive = 2;
+    console.log(b);
   }
   else if (b == '3') {
     let currentActive = 3;
+    console.log(b);
   }
   else if (b == '4') {
     let currentActive = 4;
+    console.log(b);
   }
 }
 
