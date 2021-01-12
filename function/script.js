@@ -3,7 +3,7 @@ const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
 
-let currentActive = 1
+
 next.addEventListener('click', () => {
   currentActive++
   if(currentActive > circles.length) {
@@ -45,6 +45,24 @@ function update() {
     next.disabled = false
   }
 }
+
+function load() {
+  var b = document.querySelector('p').id;
+  
+  if (b == '1') {
+    let currentActive = 1;  
+  }
+  else if (b == '2') {
+    let currentActive = 2;
+  }
+  else if (b == '3') {
+    let currentActive = 3;
+  }
+  else if (b == '4') {
+    let currentActive = 4;
+  }
+}
+
 
 
 
