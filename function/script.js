@@ -62,6 +62,7 @@ function load() {
   else if (b == '4') {
     let currentActive = 4;
   }
+  update()
 }
 
 
