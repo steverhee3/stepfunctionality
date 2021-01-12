@@ -7,7 +7,9 @@ var currentActive
 
 next.addEventListener('click', () => {
   load()
+
   currentActive++
+  console.log(currentActive)
   if(currentActive > circles.length) {
     currentActive= circles.length
   }
@@ -49,25 +51,23 @@ function update() {
     next.disabled = false
   }
 }
-
-
 function load () {
   var b = document.querySelector('p').id;
   console.log(b);
   if (b == '1') {
-    let currentActive = 1; 
+    currentActive = 1; 
     console.log(currentActive);
   }
   else if (b == '2') {
-    let currentActive = 2;
+    currentActive = 2;
     console.log(currentActive);
   }
   else if (b == '3') {
-    let currentActive = 3;
+    currentActive = 3;
     console.log(currentActive);
   }
   else if (b == '4') {
-    let currentActive = 4;
+    currentActive = 4;
     console.log(currentActive);
   }
 }
