@@ -48,7 +48,8 @@ function update() {
 
 function load() {
   var b = document.querySelector('p').id;
-  
+  const actives = document.querySelectorAll('.active')
+  progress.style.width=(actives.length-1) / (circles.length-1)*100+'%'
   if (b == '1') {
     let currentActive = 1;  
   }
