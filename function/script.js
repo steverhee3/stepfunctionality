@@ -61,7 +61,7 @@ function load () {
   }
   else if (b == '2') {
     currentActive = 2;
-    c
+    
   }
   else if (b == '3') {
     currentActive = 3;
